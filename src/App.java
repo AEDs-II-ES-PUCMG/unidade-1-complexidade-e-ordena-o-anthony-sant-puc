@@ -40,19 +40,23 @@ public class App {
     public static void main(String[] args) {
         int tam = 20;
         Integer[] vetor = gerarVetorObjetos(tam);
+        
 
         BubbleSort<Integer> bolha = new BubbleSort<>();
+        InsertionSort<Integer> insertion = new InsertionSort<>();
 
         Integer[] vetorOrdenadoBolha = bolha.ordenar(vetor);
+        Integer[] vetorOrdenadoInsertion = insertion.ordenar(vetor);
 
         System.out.println("\nVetor ordenado método Bolha:");
         System.out.println("Comparações: " + bolha.getComparacoes());
         System.out.println("Movimentações: " + bolha.getMovimentacoes());
         System.out.println("Tempo de ordenação (ms): " + bolha.getTempoOrdenacao());
 
-        /* TO DO
-        *Fazer a implementacao do restante do main para a ordenacao 
-        *  com os algoritmos InsertionSort e SelectionSort
-        */
+        System.out.println("\nVetor ordenado método Insertion:");
+        System.out.println("Comparações: " + insertion.getComparacoes());
+        System.out.println("Movimentações: " + insertion.getMovimentacoes());
+        System.out.println("Tempo de ordenação (ms): " + insertion.getTempoOrdenacao());
+
     }
 }
