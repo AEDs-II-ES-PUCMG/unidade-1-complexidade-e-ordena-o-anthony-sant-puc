@@ -38,25 +38,81 @@ public class App {
 
 
     public static void main(String[] args) {
-        int tam = 20;
-        Integer[] vetor = gerarVetorObjetos(tam);
+        int tam1 = 20;
+        int tam2 = 40;
+        int tam3 = 80;
+        Integer[] vetor1 = gerarVetorObjetos(tam1);
+        Integer[] vetor2 = gerarVetorObjetos(tam2);
+        Integer[] vetor3 = gerarVetorObjetos(tam3);
         
 
         BubbleSort<Integer> bolha = new BubbleSort<>();
         InsertionSort<Integer> insertion = new InsertionSort<>();
+        SelectionSort<Integer> selection = new SelectionSort<>();
 
-        Integer[] vetorOrdenadoBolha = bolha.ordenar(vetor);
-        Integer[] vetorOrdenadoInsertion = insertion.ordenar(vetor);
+        Integer[] vetorOrdenadoBolha1 = bolha.ordenar(vetor1);
+        Integer[] vetorOrdenadoInsertion1 = insertion.ordenar(vetor1);
+        Integer[] vetorOrdenadoSelection1 = selection.ordenar(vetor1);
 
-        System.out.println("\nVetor ordenado método Bolha:");
+        System.out.println("\nVetor ordenado 1 método Bolha:");
         System.out.println("Comparações: " + bolha.getComparacoes());
         System.out.println("Movimentações: " + bolha.getMovimentacoes());
         System.out.println("Tempo de ordenação (ms): " + bolha.getTempoOrdenacao());
 
-        System.out.println("\nVetor ordenado método Insertion:");
+        System.out.println("\nVetor ordenado 1 método Insertion:");
         System.out.println("Comparações: " + insertion.getComparacoes());
         System.out.println("Movimentações: " + insertion.getMovimentacoes());
         System.out.println("Tempo de ordenação (ms): " + insertion.getTempoOrdenacao());
 
+        System.out.println("\nVetor ordenado 1 método Selection:");
+        System.out.println("Comparações: " + selection.getComparacoes());
+        System.out.println("Movimentações: " + selection.getMovimentacoes());
+        System.out.println("Tempo de ordenação (ms): " + selection.getTempoOrdenacao());
+
+        Integer[] vetorOrdenadoBolha2 = bolha.ordenar(vetor2);
+        Integer[] vetorOrdenadoInsertion2 = insertion.ordenar(vetor2);
+        Integer[] vetorOrdenadoSelection2 = selection.ordenar(vetor2);
+
+        System.out.println("\nVetor ordenado 2 método Bolha:");
+        System.out.println("Comparações: " + bolha.getComparacoes());
+        System.out.println("Movimentações: " + bolha.getMovimentacoes());
+        System.out.println("Tempo de ordenação (ms): " + bolha.getTempoOrdenacao());
+
+
+        System.out.println("\nVetor ordenado 2 método Insertion:");
+        System.out.println("Comparações: " + insertion.getComparacoes());
+        System.out.println("Movimentações: " + insertion.getMovimentacoes());
+        System.out.println("Tempo de ordenação (ms): " + insertion.getTempoOrdenacao());
+
+        System.out.println("\nVetor ordenado 2 método Selection:");
+        System.out.println("Comparações: " + selection.getComparacoes());
+        System.out.println("Movimentações: " + selection.getMovimentacoes());
+        System.out.println("Tempo de ordenação (ms): " + selection.getTempoOrdenacao());
+
+
+        Integer[] vetorOrdenadoBolha3 = bolha.ordenar(vetor3);
+        Integer[] vetorOrdenadoInsertion3 = insertion.ordenar(vetor3);
+        Integer[] vetorOrdenadoSelection3 = selection.ordenar(vetor3);
+
+        System.out.println("\nVetor ordenado 3 método Bolha:");
+        System.out.println("Comparações: " + bolha.getComparacoes());
+        System.out.println("Movimentações: " + bolha.getMovimentacoes());
+        System.out.println("Tempo de ordenação (ms): " + bolha.getTempoOrdenacao());
+
+
+        System.out.println("\nVetor ordenado 3 método Insertion:");
+        System.out.println("Comparações: " + insertion.getComparacoes());
+        System.out.println("Movimentações: " + insertion.getMovimentacoes());
+        System.out.println("Tempo de ordenação (ms): " + insertion.getTempoOrdenacao());
+
+        System.out.println("\nVetor ordenado 3 método Selection:");
+        System.out.println("Comparações: " + selection.getComparacoes());
+        System.out.println("Movimentações: " + selection.getMovimentacoes());
+        System.out.println("Tempo de ordenação (ms): " + selection.getTempoOrdenacao());
+
+        }
+
+
+
     }
-}
+
